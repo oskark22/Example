@@ -21,5 +21,21 @@ public class Example {
         first_Student.setName(name);
         first_Student.seteMail(eMail);
         first_Student.setMyCourse(myCourse);
+
+        // Information for the second student
+        System.out.println("\nPlease enter the name of the second student: ");
+        name = input.nextLine();
+
+        System.out.println("\nPlease enter the email of the second student: ");
+        eMail = input.nextLine();
+
+        System.out.println("\nPlease enter the course of the second student: ");
+        myCourse = input.nextLine();
+
+        // Second instance of Student class
+        Student second_Student = new Student(name);
+        second_Student.seteMail(eMail);
+        second_Student.setMyCourse(myCourse);
+
     }
 }

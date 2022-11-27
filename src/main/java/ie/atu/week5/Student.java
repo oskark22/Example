@@ -4,11 +4,22 @@ public class Student {
     private String name;
     private String eMail;
     private String myCourse;
+
+    // Default constructor
     public Student() {
+        // Empty strings
         name = "";
         eMail = "";
         myCourse = "";
     }
+
+    // Constructor for the second student
+    public Student(String name) {
+        this.name = name;
+        eMail = "";
+        myCourse = "";
+    }
+
     // Generate the getter and setter methods
     public String getName() {
         return name;
